@@ -22,22 +22,22 @@ private static double underageCost(float rentalDays, int age) {
 
 private static double optionsCost(float rentalDays, boolean tollTag, boolean gps, boolean roadsideAssistance) {
   if (tollTag && gps && roadsideAssistance) {
-    System.out.println("The Options cost is " + Math.round(rentalDays * 10.85 * 100.00)/100.00 );
+    System.out.println("The Options cost is " + Math.round(rentalDays * 10.85 * 100.00) / 100.00 );
     return rentalDays * 10.85;
   } else if (tollTag && gps) {
-    System.out.println("The Options cost is " + Math.round(rentalDays * 6.9 * 100.00)/100.00);
+    System.out.println("The Options cost is " + Math.round(rentalDays * 6.9 * 100.00) / 100.00);
     return rentalDays * 6.9;
   } else if (tollTag && roadsideAssistance) {
-    System.out.println("The Options cost is " + Math.round(rentalDays * 7.9 * 100.00)/100.00 );
+    System.out.println("The Options cost is " + Math.round(rentalDays * 7.9 * 100.00) / 100.00 );
     return rentalDays * 7.9;
   }  else if (roadsideAssistance && gps) {
-    System.out.println("The Options cost is " + Math.round(rentalDays * 6.9 * 100.00)/100.00 );
+    System.out.println("The Options cost is " + Math.round(rentalDays * 6.9 * 100.00) / 100.00 );
     return rentalDays * 6.9;
   } else if (tollTag || roadsideAssistance) {
-    System.out.println("The Options cost is " + Math.round(rentalDays * 3.95 * 100.00)/100.00 );
+    System.out.println("The Options cost is " + Math.round(rentalDays * 3.95 * 100.00) / 100.00 );
     return rentalDays * 3.95;
   } else if (gps) {
-    System.out.println("The Options cost is " + Math.round(rentalDays * 2.95 * 100.00)/100.00 );
+    System.out.println("The Options cost is " + Math.round(rentalDays * 2.95 * 100.00) / 100.00 );
     return rentalDays * 2.95;
   } else {
     System.out.println("There are no Options costs");
@@ -46,7 +46,7 @@ private static double optionsCost(float rentalDays, boolean tollTag, boolean gps
 }
 
 private static double basicRentalCost(float rentalDays) {
-  System.out.println("The Basic rental cost is " + Math.round(rentalDays * 29.99 * 100.00)/100.00 );
+  System.out.println("The Basic rental cost is " + Math.round(rentalDays * 29.99 * 100.00) / 100.00 );
   return rentalDays * 29.99;
 }
 
